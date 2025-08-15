@@ -8,4 +8,7 @@ license = "MIT"
 repository = "https://github.com/9Insomnie/TitereV1.0"
 
 [dependencies]
-# 当前版本无需额外依赖
+aes-gcm = "0.10.3"
+rand = "0.8.5"
+sha2 = "0.10.8"
+clap = "3.2.25"
